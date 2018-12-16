@@ -8,9 +8,9 @@ public interface DAO<T> {
 
 	Map<Integer ,T> getAll();
 
-	T getById(long id);
+	T getById(Integer id);
 
-	T update(T t, Long id);
+	T update(T t, Integer id);
 
-	boolean delete(long id);
+	boolean delete(Integer id);
 }

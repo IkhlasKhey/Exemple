@@ -1,7 +1,5 @@
 package com.hospital.is;
 
-import java.util.Map;
-
 import com.hospital.is.model.PatientDTO;
 import com.hospital.is.service.PatientService;
 import com.hospital.is.service.impl.PatientServiceImpl;
@@ -11,25 +9,31 @@ public class Main {
 	public static void main(String[] args) {
 
 		PatientService patientService = new PatientServiceImpl();
-
-		Map<Integer, PatientDTO> map = patientService.getAll();
 		
+		// getAll() test
+		System.out.println(patientService.getAll());
+		
+		// getById() test
+		System.out.println(patientService.getById(2)); 
+		
+		// update() test
 		PatientDTO patient = patientService.getById(1);
-
-		System.out.println(map);
 		
 		patient.setFirstName("Hamza");
 		
 		System.out.println(patientService.update(patient, 1));
 		
-		map = patientService.getAll();
+		System.out.println(patientService.getAll());
 		
-		System.out.println(map);
+		// create() test
+		System.out.println(patientService.create(patient));
 		
-		//PatientDTO p = patientService.create(patient);
+		System.out.println(patientService.getAll());
 		
-		map = patientService.getAll();
-		
-		System.out.println(map);
+		// delete() test
+		if (patientService.delete(1))
+			System.out.println(patientService.getAll());
+		else
+			System.out.println("Can't delete patient !");
 	}
 }

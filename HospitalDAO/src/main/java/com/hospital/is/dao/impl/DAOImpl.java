@@ -18,19 +18,19 @@ public class DAOImpl<T> implements DAO<T> {
 	}
 
 	@Override
-	public T getById(long id) {
+	public T getById(Integer id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public T update(T t, Long id) {
+	public T update(T t, Integer id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public boolean delete(long id) {
+	public boolean delete(Integer id) {
 		// TODO Auto-generated method stub
 		return false;
 	}

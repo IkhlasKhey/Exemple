@@ -18,15 +18,21 @@ public class ServiceImpl<T> implements Service<T> {
 	}
 
 	@Override
-	public T getById(long id) {
+	public T getById(Integer id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public T update(T t, long id) {
+	public T update(T t, Integer id) {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+	@Override
+	public boolean delete(Integer id) {
+		// TODO Auto-generated method stub
+		return false;
 	}
 
 }

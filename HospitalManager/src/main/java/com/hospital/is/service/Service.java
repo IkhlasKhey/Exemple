@@ -8,10 +8,9 @@ public interface Service<T> {
 
 	Map<Integer ,T> getAll();
 
-	T getById(long id);
+	T getById(Integer id);
 
-	// put
-	T update(T t, long id);
+	T update(T t, Integer id);
 
-	//	boolean delete(long id);
+	boolean delete(Integer id);
 }

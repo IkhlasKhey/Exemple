@@ -1112,3 +1112,9 @@ Contains: Missing HospitalDAO:com.hospital.is:jar:javadoc:0.0.1-SNAPSHOT
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-16 20:53:14.718
 !MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-17 08:57:40.799
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-12-17 08:57:40.806
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
